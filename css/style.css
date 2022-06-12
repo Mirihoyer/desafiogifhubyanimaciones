@@ -1,0 +1,198 @@
+/* estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* estilos header */
+.header {
+  display: flex;
+  background-color: #a2d2ff;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu li {
+  padding: 3% 1% 2% 1%;
+}
+
+.logo img {
+  height: 80px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header"
+    "frase frase"
+    "section1 section2"
+    "section3 section4"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.frase {
+  grid-area: frase;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6f9;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  animation-name: unaAnimacion;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.frase img {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.section1 {
+  grid-area: section1;
+  display: flex;
+  justify-content: center;
+}
+
+.section1 img {
+  width: 50%;
+}
+
+.section1,
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'lato', sans-serif;
+}
+
+.titulosection2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.section2 {
+  grid-area: section2;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+.section3 {
+  grid-area: section3;
+  background-color: #fff6f9;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20%;
+  font-family: 'lato', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+.section4 {
+  grid-area: section4;
+  background-color: #fff6f9;
+  display: flex;
+  justify-content: center;
+}
+
+.section4 img {
+  width: 50%;
+}
+
+
+
+.icon {
+  padding: 30px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #a2d2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.footer .redes {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer .redes div {
+  width: 50px;
+
+}
+
+@keyframes unaAnimacion {
+  0% {
+    background-color: #CDB4DB;
+  }
+
+  25% {
+    background-color: #FFC8DD;
+  }
+
+  50% {
+    background-color: #FFAFCC;
+  }
+
+  75% {
+    background-color: #BDE0FE;
+  }
+
+  100% {
+    background-color: #A2D2FF;
+  }
+}
